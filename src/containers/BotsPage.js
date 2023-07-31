@@ -13,7 +13,7 @@ class BotsPage extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:6001/bots')
+    fetch('https://api.npoint.io/c155ece816cd9b0b4868/bots')
       .then(response => response.json())
       .then(bots => this.setState({ botCollection: bots, filteredCollection: bots }))
       .then(console.log("Bots Fetched!"))
